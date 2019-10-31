@@ -1,0 +1,8 @@
+Here's some rules defined in order to have proper data into the app
+
+1) As always, the first rule in data management is not to have redundancy in your base.
+So first of all, try to be smart and avoid every definitions of data already obtainable ether with calculations or
+with SQL requests.
+You're also supposed to apply the normal laws to all data (at least to 3N)
+
+2) Respect the DB
