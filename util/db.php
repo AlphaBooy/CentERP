@@ -17,7 +17,6 @@ function getPDO()
         $pdo = new PDO($dsn, $user, $pass, $options);
         return $pdo;
     } catch (PDOException $e) {
-        echo $e->getMessage();
-        throw new PDOException($e->getMessage(), (int)$e->getCode());
+        header("Location: error.php?error=204");
     }
 }
