@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 //Get the pdo connection the database
 require_once "../util/db.php";
 $pdo = getPDO();
