@@ -8,8 +8,20 @@
         if (isset($_SESSION['id'])) { ?>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false"><i class="ni ni-diamond"></i></a>
+                <div class="dropdown-menu center" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="company.php"><i class="ni ni-cart"></i> Plugin WorkShop</a>
+                    <a class="dropdown-item" href="projects.php"><i class="ni ni-spaceship"></i> My plugin List</a>
+                    <a class="dropdown-item" href="#"><i class="ni ni-calendar-grid-58"></i> Add a Plugin</a>
+                    <a class="dropdown-item" href="#"><i class="ni ni-badge"></i> Remove a Plugin</a>
+                    <a class="dropdown-item" href="#"><i class="ni ni-settings-gear-65"></i> Plugins Settings</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                    aria-expanded="false"><i class="ni ni-compass-04"></i></a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu center" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="company.php"><i class="ni ni-briefcase-24"></i> My company</a>
                     <a class="dropdown-item" href="projects.php"><i class="ni ni-spaceship"></i> Projects</a>
                     <a class="dropdown-item" href="#"><i class="ni ni-calendar-grid-58"></i> Schedule</a>
                     <a class="dropdown-item" href="#"><i class="ni ni-badge"></i> Teams</a>

@@ -17,7 +17,7 @@
                         <h6 class="text-success text-uppercase">Project Management System</h6>
                         <p class="description mt-3">You can create or join projects. It allows you to manage your teams,
                             the different access, the tasks and who needs to do them and even more !</p>
-                        <a href="#" class="btn btn-success mt-4">Learn more</a>
+                        <a href="learnMore.php?page=projects" class="btn btn-success mt-4">Learn more</a>
                     </div>
                 </div>
             </div>

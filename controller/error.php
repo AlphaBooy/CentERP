@@ -1,18 +1,19 @@
 <?php
 
-/** @var int $code Error code return by HTTP */
-$code = $_GET["error"];
-/** List of all possible error codes with their message, their images*/
-$error = [
-    404 => ["Page not found", "notFound.png"],
-    204 => ["No resource returned", "noDB.png",
-        "It seems that the server can't connect to the database. Make sure you're connected to internet and try to 
-        refresh the page. If the problem persist, please contact an administrator with the form below !"],
-];
-
+//The header part of the HTML document
 require_once "../util/header.php";
-
-require_once "../view/viewError.php";
-require_once "../view/viewFormError.php";
-
+//The navbar in top of the document
+require_once "../util/navbar.php";
+?>
+<div class="container bg-transparent shadow-none">
+    <img class="img-fluid" src=<?="../public/images/error/" .  $_GET["code"] . ".png" ;?>>
+    <br/><br/>
+    <a href="../index.php">
+        <button class="btn btn-block btn-icon-label btn-outline-primary w-25 mx-auto">
+            <i class="ni ni-planet"></i> Back to home
+        </button>
+    </a>
+</div>
+<?php
+//The footer part of the HTML document
 require_once "../util/footer.php";
